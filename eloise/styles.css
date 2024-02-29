@@ -5,11 +5,10 @@ body {
 }
 
 header {
-  padding: 10px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #0c3ace;
+  background-color: #f2e404;
   flex-wrap: wrap;
 }
 header img {
@@ -22,17 +21,27 @@ nav {
   font-family: 'Holtwood One SC';
   font-size: max(1.3vw, 1rem);
   align-items: center;
+  color: #0c3ace;
 }
 nav a {
   display: flex;
   text-decoration: none;
   margin: 0px 10px;
-  background-color: #f2e404;
   width: max(10vw, 100px);
-  box-shadow: 5px 5px #f14517;
   text-align: center;
   height: 80%;
-  color: #0c3ace;
   align-items: center;
   justify-content: center;
+}
+nav a:visited {
+  color: #0c3ace;
+}
+nav a:active {
+  color: #f14517;
+}
+header > a {
+  background-color: #0c3ace;
+  height: 100%;
+  padding: 10px 0px;
+  box-shadow: 20px 0px #f14517;
 }
