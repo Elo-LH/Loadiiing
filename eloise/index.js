@@ -4,6 +4,16 @@ window.addEventListener('DOMContentLoaded', function () {
   const timerElement = document.getElementById('timer-value')
   const startButton = document.getElementById('aim-start')
 
+  //header burger menu
+  let navbar = document.getElementById('navbar')
+  let burgerIcon = document.getElementById('burger-icon')
+  burgerIcon.addEventListener('click', toggleBurgerMenu)
+
+  function toggleBurgerMenu() {
+    console.log('enter toggle')
+    navbar.classList.toggle('burger-display')
+  }
+
   let score = 0
   let timer = 30
   function startGame() {
