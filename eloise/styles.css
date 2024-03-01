@@ -115,15 +115,12 @@ header > a {
   transform: rotate(-20deg);
   float: inline-start;
 }
-.music img {
-  cursor: pointer;
-}
 .music {
   position: relative;
 }
 .music div {
-  background-color: #0c3ace;
   position: absolute;
+  cursor: pointer;
 }
 #ukulele-chords {
   width: 150px;

@@ -8,7 +8,49 @@ window.addEventListener('DOMContentLoaded', function () {
     console.log('enter toggle')
     navbar.classList.toggle('burger-display')
   }
+  //music click
+  let ukuChords = document.getElementById('ukulele-chords')
+  let bassChords = document.getElementById('bass-chords')
+  ukuChords.addEventListener('click', makeUkuSound)
+  bassChords.addEventListener('click', makeBassSound)
+  function makeUkuSound() {
+    let random = Math.floor(Math.random() * 4) + 1
+    switch (random) {
+      case 1:
+        var audio = new Audio('./assets/uku-1.mp3')
+        break
+      case 2:
+        var audio = new Audio('./assets/uku-2.mp3')
+        break
+      case 3:
+        var audio = new Audio('./assets/uku-3.mp3')
+        break
+      case 4:
+        var audio = new Audio('./assets/uku-4.mp3')
+        break
+    }
+    audio.play()
+  }
+  function makeBassSound() {
+    let random = Math.floor(Math.random() * 4) + 1
+    switch (random) {
+      case 1:
+        var audio = new Audio('./assets/bass-1.mp3')
+        break
+      case 2:
+        var audio = new Audio('./assets/bass-2.mp3')
+        break
+      case 3:
+        var audio = new Audio('./assets/bass-3.mp3')
+        break
+      case 4:
+        var audio = new Audio('./assets/bass-4.mp3')
+        break
+    }
+    audio.play()
+  }
 
+  //aim game
   let score = 0
   let timer = 30
   function startGame() {
