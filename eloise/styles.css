@@ -255,7 +255,14 @@ header > a {
 .herbs {
   z-index: 2;
 }
-
+.hiking-filler {
+  height: 600px;
+}
+.hiking-filler p {
+  font-size: 6rem;
+  color: #f2e404;
+  font-family: 'Dotgothic16';
+}
 /* ----------------------------------------- FOOTER -------------------------------------------- */
 footer {
   box-sizing: border-box;

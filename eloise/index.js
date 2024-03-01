@@ -14,10 +14,12 @@ window.addEventListener('DOMContentLoaded', function () {
   let herbs = document.querySelectorAll('.herbs')
   let hana = document.getElementById('hana')
   let elo = document.getElementById('elo')
+  let text = document.querySelector('.hiking-filler p')
 
   function handleScroll() {
     hana.style.transform = `translateX(-${window.scrollY * 0.1}px)`
     elo.style.transform = `translateX(-${window.scrollY * 0.2}px)`
+    text.style.transform = `translateX(${window.scrollY * 0.5}px)`
     herbs.forEach((herb) => {
       herb.style.transform = `translateX(${window.scrollY * 0.5}px)`
     })
