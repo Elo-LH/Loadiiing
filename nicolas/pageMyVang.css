@@ -1,4 +1,29 @@
-body p {
-        font-family: "Holtwood One SC";
+* {
+    box-sizing: border-box;
+}
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #0c3ace;
+    font-size: 16px;
+    margin: 0px;
+}
+
+h1 {
+    background-color: blue;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+footer p {
+    font-family: "Holtwood One SC";
+}
+
+.boxDeux {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }

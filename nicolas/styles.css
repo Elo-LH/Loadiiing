@@ -38,9 +38,9 @@ body {
   
   
 .lesBox {
- width: 100%;
-    display: flex;
-    justify-content: flex-end;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 
 }
 
@@ -54,6 +54,7 @@ body {
 .boxDeux {
   display: flex;
   height: 100%;
+  width: 200px;
   background-color: #D975E4;
 
 }
@@ -66,7 +67,8 @@ body {
 }
 .boxQuatre {
   display: flex;
-  flex:2;
+  flex:4;
+  width: 200px;
   height: 100%;
   background-color: #2E37C4;
 
