@@ -8,6 +8,22 @@ window.addEventListener('DOMContentLoaded', function () {
     console.log('enter toggle')
     navbar.classList.toggle('burger-display')
   }
+
+  // scroll hike
+
+  let herbs = document.querySelectorAll('.herbs')
+  let hana = document.getElementById('hana')
+  let elo = document.getElementById('elo')
+
+  function handleScroll() {
+    hana.style.transform = `translateX(-${window.scrollY * 0.1}px)`
+    elo.style.transform = `translateX(-${window.scrollY * 0.2}px)`
+    herbs.forEach((herb) => {
+      herb.style.transform = `translateX(${window.scrollY * 0.5}px)`
+    })
+  }
+  window.addEventListener('scroll', handleScroll)
+
   //music click
   let ukuChords = document.getElementById('ukulele-chords')
   let bassChords = document.getElementById('bass-chords')
@@ -48,6 +64,32 @@ window.addEventListener('DOMContentLoaded', function () {
         break
     }
     audio.play()
+  }
+
+  // enigma prompt
+  let enigmaButton = document.getElementById('enigma-answer')
+  enigmaButton.addEventListener('click', testAnswer)
+
+  function testAnswer() {
+    let answer = getAnswer()
+    giveFeedback(answer)
+  }
+  function getAnswer() {
+    return window.prompt('What is your answer ?')
+  }
+  function giveFeedback(answer) {
+    if (answer == 0) {
+      alert('Bravo ! Tu as trouvé la bonne réponse ;)')
+    } else {
+      alert("Ce n'est pas la bonne réponse, essaie encore !")
+    }
+  }
+  let enigmaHint = document.getElementById('enigma-hint')
+  enigmaHint.addEventListener('click', showHint)
+  function showHint() {
+    alert(
+      "Since the puzzle tells you that no one got on the train during the journey, it's safe to say that the number of passengers on the train never increased. "
+    )
   }
 
   //aim game
