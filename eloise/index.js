@@ -1,9 +1,4 @@
 window.addEventListener('DOMContentLoaded', function () {
-  const gameContainer = document.getElementById('game-container')
-  const scoreElement = document.getElementById('score-value')
-  const timerElement = document.getElementById('timer-value')
-  const startButton = document.getElementById('aim-start')
-
   //header burger menu
   let navbar = document.getElementById('navbar')
   let burgerIcon = document.getElementById('burger-icon')
@@ -17,6 +12,7 @@ window.addEventListener('DOMContentLoaded', function () {
   let score = 0
   let timer = 30
   function startGame() {
+    resetGame()
     setInterval(updateTimer, 1000)
     createTarget()
   }
@@ -39,8 +35,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   function updateTimer() {
     timer--
-    timerElement.textContent = timer + 's'
-
+    timerElement.textContent = timer
     if (timer <= 0) {
       endGame()
     }
@@ -52,12 +47,33 @@ window.addEventListener('DOMContentLoaded', function () {
   }
 
   function resetGame() {
+    const gameContainer = document.getElementById('game-container')
     score = 0
     timer = 30
     scoreElement.textContent = score
     timerElement.textContent = timer + 's'
     gameContainer.innerHTML = '' // Clear all targets
-    startGame()
+    //Regenerate score and timer
+    let scoreDiv = document.createElement('div')
+    scoreDiv.innerText = 'Score: '
+    scoreDiv.id = 'score'
+    let timerDiv = document.createElement('div')
+    timerDiv.innerText = 'Time: '
+    timerDiv.id = 'timer'
+    let scoreSpan = document.createElement('span')
+    scoreSpan.classList.add('score-value')
+    scoreSpan.innerText = '0'
+    let timerSpan = document.createElement('span')
+    timerSpan.classList.add('timer-value')
+    timerSpan.innerText = '30'
+    scoreDiv.appendChild(scoreSpan)
+    timerDiv.appendChild(timerSpan)
+    gameContainer.appendChild(timerDiv)
+    gameContainer.appendChild(scoreDiv)
+
+    const scoreElement = document.getElementById('score-value')
+    const timerElement = document.getElementById('timer-value')
+    const startButton = document.getElementById('aim-start')
   }
 
   startButton.addEventListener('click', startGame)
