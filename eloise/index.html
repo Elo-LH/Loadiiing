@@ -41,18 +41,22 @@
       </nav>
     </header>
     <main>
-      <section class="aim-bot">
-        <button id="aim-start">Aim training sesh'</button>
-        <div id="game-container">
-          <div id="score">Score: <span id="score-value">0</span></div>
-          <div id="timer">Time: <span id="timer-value">30</span>s</div>
-        </div>
-      </section>
-      <section class="music">
-        <img src="./assets/bass.png" />
-        <img src="./assets/ukulele.png" />
-      </section>
-      <section class="enigma"></section>
+      <div class="top-wrapper">
+        <section class="aim-bot">
+          <button id="aim-start">Aim training sesh'</button>
+          <div id="game-container">
+            <div id="score">Score: <span id="score-value">0</span></div>
+            <div id="timer">Time: <span id="timer-value">30</span>s</div>
+          </div>
+        </section>
+        <section class="music">
+          <img id="ukulele" src="./assets/ukulele.png" />
+          <img id="bass" src="./assets/bass.png" />
+          <div id="ukulele-chords" class="chords"></div>
+          <div id="bass-chords" class="chords"></div>
+        </section>
+        <section class="enigma"></section>
+      </div>
       <section class="hiking"></section>
     </main>
   </body>
