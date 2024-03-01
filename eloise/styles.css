@@ -73,6 +73,8 @@ header > a {
   box-shadow: 20px 0px #f14517;
 }
 
+/* ----------------------------- AIM TARGET ----------------------------------------------- */
+
 #game-container {
   position: relative;
   width: 500px;
@@ -106,6 +108,8 @@ header > a {
   font-size: 24px;
   font-weight: bold;
 }
+
+/* ----------------------------- MUSIC ------------------------------------------ */
 #bass {
   height: 500px;
   transform: rotate(20deg);
