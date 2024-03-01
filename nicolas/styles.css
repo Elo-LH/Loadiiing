@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 16px;
+  margin: 0px;
+}
+
+
+
+.footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2e404;
+    color: #0c3ace;
+    text-align: center;
+    font-family: "Holtwood One SC";
+    padding: 0;
+}
+
+.logoFooter {
+    
+}
+.bouton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  
+.lesBox {
+ width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.boxUn {
+  display: flex;
+  height: 100%;
+  width: 15%;
+  background-color: #f14517;
+
+}
+.boxDeux {
+  display: flex;
+  height: 100%;
+  background-color: #D975E4;
+
+}
+.boxTrois {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  background-color: #F1D54D;
+
+}
+.boxQuatre {
+  display: flex;
+  flex:2;
+  height: 100%;
+  background-color: #2E37C4;
+
+}
+.boxCinq {
+  display: flex;
+  flex: 3;
+  width: 200px;
+  height: 100%;
+  background-color: #FAF8DB;
+
+}
