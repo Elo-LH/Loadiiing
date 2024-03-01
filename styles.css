@@ -1,1 +1,248 @@
+/* -----------------------HEADER---------------------- */
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f2e404;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header img {
+  height: max(max(4vw, 5vh), 50px);
+}
+.burger-menu img {
+  display: none;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-family: 'Dotgothic16';
+  font-size: max(1.6vw, 1.3rem);
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  align-items: center;
+  color: #0c3ace;
+}
+@media screen and (max-width: 740px) {
+  .burger-menu img {
+    display: block;
+    padding-right: 50px;
+    cursor: pointer;
+  }
+  .burger-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  nav p {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+}
+
+nav a {
+  display: flex;
+  text-decoration: none;
+  margin: 0px 10px;
+  width: max(10vw, 100px);
+  text-align: center;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+}
+nav a:visited {
+  color: #0c3ace;
+}
+nav a:active {
+  color: #f14517;
+}
+header > a {
+  background-color: #0c3ace;
+  height: 100%;
+  padding: 10px 0px;
+  box-shadow: 20px 0px #f14517;
+}
+
+/* -----------------------CONTENT---------------------- */
+
+body {
+  background-color: #0c3ace;
+  font-size: 16px;
+  margin: 0px;
+}
+
+.header {
+  width: 100%;
+}
+
+main {
+  font-size: 62.5%;
+  width: 200%;
+  position: f;
+}
+
+main > div {
+}
+
+.baladeur {
+  z-index: 2;
+  position: absolute;
+  left: 15%;
+  max-width: 100%;
+  bottom: 565px;
+}
+.cassette {
+  z-index: 1;
+  position: absolute;
+  left: -6%;
+  bottom: 220px;
+}
+.skate {
+  z-index: 3;
+  position: absolute;
+  bottom: -350px;
+  left: -15%;
+}
+
+.gfenetre {
+  z-index: 4;
+  position: absolute;
+  top: 100px;
+  right: 65%;
+}
+
+.pfenetre {
+  z-index: 3;
+  position: absolute;
+  top: 140px;
+  right: 1%;
+}
+
+.stereo {
+  z-index: 3;
+  position: absolute;
+  bottom: -8px;
+  right: -5%;
+}
+
+.vibes2 {
+  z-index: 3;
+  position: absolute;
+  bottom: -30px;
+  right: -5%;
+}
+
+.imgbaladeur {
+  max-width: 200px;
+}
+
+.imgcassette {
+  max-width: 440px;
+}
+
+.imgskate {
+  min-width: 760px;
+}
+
+.imggfenetre {
+  max-width: 780px;
+}
+
+.gfenetre {
+  max-width: 150px;
+}
+
+.imgpfenetre {
+  max-width: 404px;
+}
+.imgskate {
+  max-width: 150px;
+}
+
+.imgstereo {
+  max-width: 540px;
+}
+
+.imgvibes2 {
+  max-width: 1000px;
+}
+
+/* -----------------------FOOTER---------------------- */
+
+footer {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2e404;
+  color: #0c3ace;
+  text-align: center;
+  font-family: 'Holtwood One SC';
+  padding: 0;
+}
+
+.logoFooter {
+  height: 50px;
+}
+.bouton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.lesBox {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.boxUn {
+  display: flex;
+  height: 100%;
+  width: 15%;
+  background-color: #f14517;
+}
+.boxDeux {
+  display: flex;
+  height: 100%;
+  background-color: #d975e4;
+}
+.boxTrois {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  background-color: #f1d54d;
+}
+.boxQuatre {
+  display: flex;
+  flex: 2;
+  height: 100%;
+  background-color: #2e37c4;
+}
+.boxCinq {
+  display: flex;
+  flex: 3;
+  width: 200px;
+  height: 100%;
+  background-color: #faf8db;
+}
