@@ -43,22 +43,63 @@
     <main>
       <div class="top-wrapper">
         <section class="aim-bot">
-          <button id="aim-start">Aim training sesh'</button>
           <div id="game-container">
             <div id="score">Score: <span id="score-value">0</span></div>
             <div id="timer">Time: <span id="timer-value">30</span>s</div>
           </div>
+          <button id="aim-start">Aim training sesh'</button>
+        </section>
+        <section class="enigma">
+          <h2>Enigma time...</h2>
+          <p>
+            An unknown number of people are riding a train. At the first station
+            the train pulls into, 1/6 of the people on board get off. At the
+            next station, 1/5 of the remaining passengers get off. This pattern
+            continues so that at the next stations 1/4 get off, then 1/3, and
+            then 1/2. Then, at the final station, all passengers remaining on
+            the train exit as well. <br /><br />
+            Assuming no one got on the train during the ride, what is the fewest
+            number of people that could have been riding on the train when it
+            set out?
+          </p>
+          <button id="enigma-answer">Give my answer</button>
+          <button id="enigma-hint">Give me an hint</button>
         </section>
         <section class="music">
           <img id="ukulele" src="./assets/ukulele.png" />
           <img id="bass" src="./assets/bass.png" />
           <div id="ukulele-chords" class="chords"></div>
           <div id="bass-chords" class="chords"></div>
+          <p>Let's jam !</p>
         </section>
-        <section class="enigma"></section>
       </div>
-      <section class="hiking"></section>
+      <section class="hiking">
+        <img class="herbs" src="./assets/herbs.png" />
+        <img class="herbs" src="./assets/herbs.png" />
+        <img id="hana" src="./assets/avatar_hana.png" />
+        <img class="herbs" src="./assets/herbs.png" />
+        <img id="elo" src="./assets/avatar_elo.png" />
+        <img class="herbs" src="./assets/herbs.png" />
+      </section>
+      <section class="hiking-filler"><p>Let's explore</p></section>
     </main>
+    <footer class="footer">
+      <p>
+        <img class="logoFooter" src="assets/loadiiing-logo.png" />
+      </p>
+      <section class="lesBox">
+        <div class="boxUn"></div>
+        <div class="boxDeux"></div>
+        <div class="boxTrois"></div>
+        <div class="boxQuatre"></div>
+        <div class="boxCinq"></div>
+        <div class="boxSix"></div>
+      </section>
+      <div id="contenu">
+        <p>go top !</p>
+        <button id="boutonHaut" onclick="scrollToTop()">TOP</button>
+      </div>
+    </footer>
   </body>
   <script src="./index.js"></script>
 </html>
