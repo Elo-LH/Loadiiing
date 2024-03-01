@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size:62.5%;
+
+}
+body {
+    background-color: #0c3ace;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.header {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+.decors{
+    z-index: 5;
+    position: absolute;
+    margin:0px;
+}
+
+.imgdecors{
+    max-width: 100%;
+}
+
+.ados {
+    z-index: 4;
+    position: absolute;
+    bottom:5px;
+}
+.imgados {
+    max-width: 53%;
+    filter: opacity(80%);
+}
+
+.fenetreados {
+    z-index: 1;
+    position: absolute;
+}
+.imgfenetreados {
+    max-width:500px;
+}
+
+.seanarcenciel {
+    z-index: 5;
+    position: absolute;
+    right: 20%;
+    bottom:50%;
+}
+.imgseanarcenciel {
+    max-width: 600px;
+}
+
+.love {
+    z-index: 6;
+    position: absolute;
+    top: 20px;
+    left:25%;
+}
+
+.imglove {
+    max-width: 500px;
+}
+
+.descriptionMyVang {
+    margin-left:300px;
+    margin-right:300px;
+    margin-bottom:120px;
+    padding:50px;
+    
+    z-index:6;
+    display:box;
+    position:absolute;
+    bottom: 80px;
+    background-color:#ffa347;
+    border-radius:30px;
+}
+
+p{
+    color: #FFFFFF;
+    font:"googleapis";
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  position:absolute;
+}
+
+.element {
+  flex: 0 0 33.333%;
+  width: 20%;
+  position:absolute;
+}
+
+
