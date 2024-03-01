@@ -1,0 +1,108 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f2e404;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header img {
+  height: max(max(4vw, 5vh), 50px);
+}
+.burger-menu img {
+  display: none;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-family: 'Dotgothic16';
+  font-size: max(1.6vw, 1.3rem);
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  align-items: center;
+  color: #0c3ace;
+}
+@media screen and (max-width: 740px) {
+  .burger-menu img {
+    display: block;
+    padding-right: 50px;
+    cursor: pointer;
+  }
+  .burger-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  nav p {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+}
+
+nav a {
+  display: flex;
+  text-decoration: none;
+  margin: 0px 10px;
+  width: max(10vw, 100px);
+  text-align: center;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+}
+nav a:visited {
+  color: #0c3ace;
+}
+nav a:active {
+  color: #f14517;
+}
+header > a {
+  background-color: #0c3ace;
+  height: 100%;
+  padding: 10px 0px;
+  box-shadow: 20px 0px #f14517;
+}
+
+#game-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.target {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#timer {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.music img {
+  height: 500px;
+}

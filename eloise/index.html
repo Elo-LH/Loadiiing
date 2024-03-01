@@ -5,7 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loadiiing</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
-  <script src="index.js"></script>
+  <body>
+    <header>
+      <a href="../index.html"
+        ><img src="./assets/loadiiing-logo.png" alt="Loadiiing logo"
+      /></a>
+      <div class="burger-menu">
+        <img
+          alt="burger menu icon"
+          id="burger-icon"
+          src="./assets/burger-icon.png"
+        />
+      </div>
+      <nav id="navbar">
+        <a href="/my_vang/index.html">MY VANG</a>
+        <p>/</p>
+        <a href="/nicolas/index.html">NICOLAS</a>
+        <p>/</p>
+        <a href="/eloise/index.html">ELOISE</a>
+        <p>/</p>
+        <a href="../index.html">TEAM</a>
+      </nav>
+    </header>
+    <main>
+      <section class="aim-bot">
+        <button id="aim-start">Aim training sesh'</button>
+        <div id="game-container">
+          <div id="score">Score: <span id="score-value">0</span></div>
+          <div id="timer">Time: <span id="timer-value">30</span>s</div>
+        </div>
+      </section>
+      <section class="music">
+        <img src="./assets/bass.png" />
+        <img src="./assets/ukulele.png" />
+      </section>
+      <section class="enigma"></section>
+      <section class="hiking"></section>
+    </main>
+  </body>
+  <script src="./index.js"></script>
 </html>
